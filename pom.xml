@@ -14,7 +14,7 @@
         <allure.results.directory>${buildDirectory}/allure-results</allure.results.directory>
         <resultsPatternAllure>**/allure-results</resultsPatternAllure>
         <allure.version>2.13.5</allure.version>
-        <maven-surefire-plugin.version>2.20.1</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
         <aspectj.version>1.8.10</aspectj.version>
         <allure-testng.version>2.13.5</allure-testng.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,7 +40,7 @@
                         -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
                     </argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/brainSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>${project.basedir}/src/test/resources/brainSuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemProperties>
                         <property>
