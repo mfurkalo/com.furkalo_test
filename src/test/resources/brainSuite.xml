@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite Brain.ua" verbose="1">
+    <listeners>
+        <listener class-name="core.ListenerITest"/>
+        <listener class-name="core.ListenerIInvoked"/>
+    </listeners>
+    <test name="Brain log-in form tests">
+        <classes>
+            <class name="tests.BrainPool"/>
+        </classes>
+    </test>
+</suite>
