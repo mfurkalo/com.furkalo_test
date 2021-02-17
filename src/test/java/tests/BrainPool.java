@@ -35,7 +35,6 @@ public class BrainPool extends BaseTest {
         brainMainPage.checkUserName(userName);
     }
 
-
     @Description("Negative log-in into Brain with a wrong phone number) ")
     @Test
     @TmsLink("2")
